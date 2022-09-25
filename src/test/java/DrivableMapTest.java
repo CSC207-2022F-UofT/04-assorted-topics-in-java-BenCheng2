@@ -1,5 +1,7 @@
 import org.junit.Before;
 import org.junit.Test;
+
+import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.Assert.*;
@@ -35,7 +37,7 @@ public class DrivableMapTest {
         dm.addDrivable("Horse", h);
         dm.addDrivable("Unicorn", u);
 
-        List<Tradable> tradables = dm.getTradable();
+        ArrayList<Drivable> tradables = dm.getTradable();
         assertEquals(1, tradables.size());
         assertEquals(h, tradables.get(0));
     }
